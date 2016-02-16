@@ -1,0 +1,8 @@
+$noticeColor: #1DC225;
+
+div#notice {
+  background-color: $noticeColor;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+}

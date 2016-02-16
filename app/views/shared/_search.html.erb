@@ -1,0 +1,6 @@
+<%= form_tag recipes_url, method: :get do %>
+  <label for="query">Category: </label>
+  <%= select(:q, @categories, :include_blank => true) %>
+  <input type="search" id="query" name="q" value="<%= params[:q] %>">
+  <input type="submit" value="Search">
+<% end %>
