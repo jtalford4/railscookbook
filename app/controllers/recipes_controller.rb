@@ -78,6 +78,7 @@ class RecipesController < ApplicationController
       params.require(:recipe).permit(:title, :ingredients, :instructions, :category_id, :calories)
     end
     
+    # This method returns all of the categories in the database.
     def get_categories
       @categories = Category.all.collect{|c| [c.name, c.id] }
     end
